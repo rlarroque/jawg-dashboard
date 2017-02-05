@@ -2,7 +2,7 @@
 $(function() {
   // These settings override the defaults set in application.coffee. You can do this on a per dashboard basis.
   Dashing.widget_base_dimensions = [370, 340]
-  Dashing.numColumns = 4
+  Dashing.numColumns = 5
 });
 </script>
 
@@ -10,17 +10,30 @@ $(function() {
 
 <div class="gridster">
   <ul>
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="jawg-logo" data-view="Image" data-image="/jawg_logo.png" style="background-color:#ecf0f1;"></div>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="3">
+      <div data-id="jawg-logo" data-view="Text"
+      style="background-color:#34495e;"
+      data-title="We are Jawg"
+      data-text="Jawg is an awesome project that let you use incredibly wonderful maps."
+      data-moreinfo="Follow us on twitter @jawgio"></div>
+      <i class="fa fa-map-marker icon-background"></i>
     </li>
 
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+    <li data-row="1" data-col="2" data-sizex="1" data-sizey="1">
       <div data-id="clock" data-view="Clock"></div>
       <i class="fa fa-clock-o icon-background"></i>
     </li>
 
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+    <li data-row="1" data-col="3" data-sizex="1" data-sizey="1">
       <div data-id="twitter_user_followers" data-view="Number" data-title="Twitter followers"></div>
+    </li>
+
+    <li data-row="1" data-col="4" data-sizex="1" data-sizey="1">
+      <div data-id="valuation" data-view="Number" data-title="Current Valuation" data-moreinfo="In billions" data-prefix="$"></div>
+    </li>
+
+    <li data-row="1" data-col="5" data-sizex="1" data-sizey="1">
+      <div data-id="synergy" data-view="Meter" data-title="Synergy" data-min="0" data-max="100"></div>
     </li>
 
   </ul>
